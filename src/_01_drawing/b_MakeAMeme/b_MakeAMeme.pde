@@ -1,14 +1,24 @@
 
+
 // 1. Drag and drop the fistPump.png image onto this sketch
 
 void setup() {
  // 2. Set the size of the sketch to be 500 x 500
+size(500,500);
 
  // The following code loads the image into the program
   PImage baby = loadImage("fistPump.png");
   
   // 3. Resize the baby image to be the same size as the sketch
   //    Use the baby.resize() command for this
+baby.resize(500,500);
+
+background(baby); 
+textSize(30);
+text("TESTED MY PROGRAM",100,100);
+
+fill(0,0,0);
+textSize(30);
 
 
   // 4. Set the baby image to be the background of your sketch
@@ -35,6 +45,10 @@ void draw() {
   // 9. Change the program so it only shows the punchline when the mouse is pressed
   //    Put this code       if(mousePressed)     before you write the punchline
   
+  if(mousePressed) {
+  System.out.println("print");
+  text("IT WORKED FIRST TIME",100,400);
+}
   // MAKE SURE YOU SAVE YOUR CODE! 
 
 }
